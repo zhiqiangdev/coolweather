@@ -20,9 +20,8 @@
             android:id="@+id/back_button"
             android:layout_width="43dp"
             android:layout_height="30dp"
-            android:background="@drawable/ic_backup"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_backup"
             android:layout_alignParentLeft="true"/>
     </RelativeLayout>
 
