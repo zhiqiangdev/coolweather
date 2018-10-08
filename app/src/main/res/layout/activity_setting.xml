@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@drawable/setting_background">
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_img"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_gravity="center_vertical"/>
+
+     </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#5592d4"
+        >
+    </FrameLayout>
+
+
+    <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginRight="15dp"
+       android:layout_marginLeft="15dp">
+        <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="自动更新"
+               android:textSize="20sp"
+               android:textColor="#fff"
+               android:layout_centerVertical="true"
+               />
+           <Switch
+               android:id="@+id/auto_update_switch"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:checked="false"
+               android:switchMinWidth="53dp"
+               android:shadowColor="#b5faf4"
+               />
+
+        </RelativeLayout>
+
+        <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="0.9dp"
+           android:background="#5592d4"
+           >
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/update_interval_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新间隔"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/interval_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/last_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.9dp"
+            android:background="#5592d4"
+            >
+        </FrameLayout>
+
+
+   </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="#5592d4">
+     </FrameLayout>
+
+</LinearLayout>
